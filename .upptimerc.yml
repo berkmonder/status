@@ -13,7 +13,7 @@ sites:
     url: https://turquoise.berkmonder.com
     maxResponseTime: 3000
   - name: turquoise API
-    url: https://turquoise.berkmonder.com/api/v1/models
+    url: https://turquoise.berkmonder.com/api/health
     maxResponseTime: 3000
 status-website:
   baseUrl: /status
