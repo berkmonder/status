@@ -1,7 +1,7 @@
 url: https://turquoise.berkmonder.com/api/v1/models
-status: up
-code: 200
-responseTime: 462
-lastUpdated: 2026-10-31T01:58:27.713Z
+status: down
+code: 404
+responseTime: 530
+lastUpdated: 2026-10-31T13:17:20.734Z
 startTime: 2026-10-30T17:24:22.795Z
 generator: Upptime <https://github.com/upptime/upptime>
