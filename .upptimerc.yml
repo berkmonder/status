@@ -6,9 +6,6 @@ sites:
   - name: berkmonder.com
     url: https://berkmonder.com
     maxResponseTime: 3000
-  - name: sakis.berkmonder.com (kitap)
-    url: https://sakis.berkmonder.com
-    maxResponseTime: 3000
   - name: turquoise.berkmonder.com
     url: https://turquoise.berkmonder.com
     maxResponseTime: 3000
