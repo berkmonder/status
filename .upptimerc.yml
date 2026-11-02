@@ -13,7 +13,7 @@ sites:
     url: https://turquoise.berkmonder.com/api/health
     maxResponseTime: 3000
 status-website:
-  baseUrl: /status
+  cname: status.berkmonder.com # at GoDaddy: CNAME status → berkmonder.github.io
   name: berkmonder.com status
   introTitle: Are my sites up?
   introMessage: Checked every 5 minutes from GitHub's servers, by [Upptime](https://upptime.js.org).
