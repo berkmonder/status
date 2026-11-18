@@ -1,24 +1,12 @@
-# Upptime: https://upptime.js.org/docs/configuration. A change shows on the status page within a day
-# (or run Actions → Summary CI, then Static Site CI). Made by nix-dotfiles' scripts/status-setup.
+# Upptime: https://upptime.js.org/docs/configuration. GitHub runs the checks every 5 minutes and keeps
+# the history here; berkmonder.com/status shows it (Upptime's own status website is retired:
+# status.berkmonder.com redirects there, from the gh-pages branch). Made by nix-dotfiles' scripts/status-setup.
 owner: berkmonder
 repo: status
 sites:
   - name: berkmonder.com
     url: https://berkmonder.com
     maxResponseTime: 3000
-  - name: turquoise.berkmonder.com
-    url: https://turquoise.berkmonder.com
+  - name: Turquoise API
+    url: https://berkmonder.com/api/health
     maxResponseTime: 3000
-  - name: turquoise API
-    url: https://turquoise.berkmonder.com/api/health
-    maxResponseTime: 3000
-status-website:
-  cname: status.berkmonder.com # at GoDaddy: CNAME status → berkmonder.github.io
-  name: berkmonder.com status
-  introTitle: Are my sites up?
-  introMessage: Checked every 5 minutes from GitHub's servers, by [Upptime](https://upptime.js.org).
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
