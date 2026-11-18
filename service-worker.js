@@ -1,1 +1,11 @@
-!function(){"use strict";self.addEventListener("install",function(){self.skipWaiting()}),self.addEventListener("activate",function(){self.registration.unregister().then(function(){return self.clients.matchAll()}).then(function(t){t.forEach(t=>t.navigate(t.url))}).catch(function(){})})}();
+// The old status site registered a service worker; this one takes its place, removes itself and
+// reloads open pages, so earlier visitors get the redirect instead of a cached copy.
+self.addEventListener("install", () => self.skipWaiting());
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    self.registration
+      .unregister()
+      .then(() => self.clients.matchAll({ type: "window" }))
+      .then((clients) => clients.forEach((client) => client.navigate(client.url))),
+  );
+});
